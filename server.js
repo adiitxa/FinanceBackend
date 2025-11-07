@@ -16,7 +16,7 @@ app.use('/api/transactions', require('./routes/transactions'));
 app.use('/api/chat', require('./routes/chat'));
 
 // MongoDB connection
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/finance-tracker', {
+mongoose.connect('mongodb+srv://Aditya:Aditya@cluster0.ah2icqk.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
